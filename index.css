@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    background-color: black;
+}
+#compteur{
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    font-size: 10rem;
+    color: white;
+    text-align: center;
+}
