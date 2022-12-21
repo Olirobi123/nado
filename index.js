@@ -26,3 +26,5 @@ setInterval(function () {
     document.querySelector('.minute').innerText = ' ' + textMinute + " :";
     document.querySelector('.second').innerText = ' ' + textSecond;
 }, 1000);
+
+
