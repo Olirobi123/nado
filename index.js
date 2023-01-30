@@ -1,7 +1,7 @@
 //Un décompte sur dans le id compteur de la page index.html jusqu'au 16 février 2023
 // 1000 signifie 1 seconde
 setInterval(function () {
-    const countDate = new Date('Feb 16, 2023 20:30:00').getTime();
+    const countDate = new Date('Feb 17, 2023 21:00:00').getTime();
     const now = new Date().getTime();
     const gap = countDate - now;
 
