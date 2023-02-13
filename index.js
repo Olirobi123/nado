@@ -1,4 +1,4 @@
-//Un décompte sur dans le id compteur de la page index.html jusqu'au 16 février 2023
+//Un décompte sur dans le id compteur de la page index.html jusqu'au 17 février 2023
 // 1000 signifie 1 seconde
 setInterval(function () {
     const countDate = new Date('Feb 17, 2023 21:00:00').getTime();
@@ -20,11 +20,18 @@ setInterval(function () {
     // Affichage du temps
     //si textDay est est vide ou undefined alors on affiche 0
     if (textDay != 0 || textDay != undefined) {
-        document.querySelector('.day').innerText = textDay + " :";
+        document.querySelector('.day').innerText = ajouterZero(textDay) + " :";
     }
-    document.querySelector('.hour').innerText = ' ' + textHour + " :";
-    document.querySelector('.minute').innerText = ' ' + textMinute + " :";
-    document.querySelector('.second').innerText = ' ' + textSecond;
+    document.querySelector('.hour').innerText = ' ' + ajouterZero(textHour) + " :";
+    document.querySelector('.minute').innerText = ' ' + ajouterZero(textMinute) + " :";
+    document.querySelector('.second').innerText = ' ' + ajouterZero(textSecond);
 }, 1000);
+
+function ajouterZero(nombre) {
+    if (nombre < 10) {
+        nombre = "0" + nombre;
+    }
+    return nombre;
+}
 
 
